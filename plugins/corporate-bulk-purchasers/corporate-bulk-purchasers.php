@@ -87,7 +87,7 @@ class WOO_BCIT_custom_discounts{
  */
 	public function is_user_the_real_deal($query){
 
-	if ( ! is_admin() && is_user_logged_in() && is_post_type_archive( 'product' ) && $query->is_main_query() ){
+	if ( ! is_admin() || is_user_logged_in() || is_post_type_archive( 'product' ) && $query->is_main_query() ){
 
       $meta_query = $query->get('meta_query');
       $meta_query[] = array(
