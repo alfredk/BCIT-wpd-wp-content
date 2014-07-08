@@ -1,0 +1,47 @@
+*** Software Addon Changelog ***
+
+2014.03.25 - version 1.2.3
+* Fixed upgradable product check
+* Fixed resetting of platform upon key reset
+
+2014.03.19 - version 1.2.2
+* Introduces the value of the platform field in the check request
+
+2014.03.12 - version 1.2.1
+* Fixed bug where upgrade price didn't apply
+* Added remaining number activations to check request
+
+2014.01.20 - version 1.2
+* WooCommerce 2.1 compatible
+
+2013.04.22 - version 1.1.4
+* Fix: When querying software products, return those with parents (grouped)
+
+2013.04.04 - version 1.1.3
+* Fix: Removed object passes by reference
+* Fix: Generate multiple licences if product is bought in multiple quantity
+* Fix: Zero equals to false, should check for the infinite value
+
+2013.02.14 - version 1.1.2
+* Fixes for manually adding keys in admin
+
+2013.02.14 - version 1.1.1
+* Restored WC 1.6.6 compat
+
+2013.01.31 - version 1.1
+* WooCommerce 2.0 and WordPress 3.5 compatibility
+
+2012.12.04 - version 1.0.4
+ * New updater
+
+2012.09.13 - version 1.0.3
+* Fixed issue with unlimited available activations
+
+2012.08.03 - version 1.0.2
+ * Small UI tweak for WooCommerce 1.6.2
+
+2012.07.25 - version 1.0.1
+ * Support write panel in WC 1.6.2
+
+2012.05.16 - version 1.0
+ * First Release

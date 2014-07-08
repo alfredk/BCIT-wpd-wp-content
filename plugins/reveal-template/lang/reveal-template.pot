@@ -1,0 +1,224 @@
+# Translation of the WordPress plugin Reveal Template v3.0 by Scott Reilly.
+# Copyright (C) 2014 Scott Reilly
+# This file is distributed under the same license as the Reveal Template plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Reveal Template 3.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/reveal-template\n"
+"POT-Creation-Date: 2013-12-28 22:19:43+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: c2c-plugin.php:75
+msgid "Invalid file specified for C2C_Plugin: %s"
+msgstr ""
+
+#: c2c-plugin.php:125 c2c-plugin.php:132
+msgid "Cheatin&#8217; huh?"
+msgstr ""
+
+#: c2c-plugin.php:309
+msgid "See the \"Help\" link to the top-right of the page for more help."
+msgstr ""
+
+#: c2c-plugin.php:342
+msgid "Settings reset."
+msgstr ""
+
+#: c2c-plugin.php:353 c2c-plugin.php:361
+msgid "A value is required for: \"%s\""
+msgstr ""
+
+#: c2c-plugin.php:370
+msgid "Expected integer value for: %s"
+msgstr ""
+
+#: c2c-plugin.php:482
+msgid "More information about %1$s %2$s"
+msgstr ""
+
+#: c2c-plugin.php:483
+msgid "Click for more help on this plugin"
+msgstr ""
+
+#: c2c-plugin.php:484
+msgid " (especially check out the \"Other Notes\" tab, if present)"
+msgstr ""
+
+#: c2c-plugin.php:598
+msgid "More Help"
+msgstr ""
+
+#: c2c-plugin.php:610
+msgid "Settings"
+msgstr ""
+
+#: c2c-plugin.php:622
+msgid "Donation for coffee2code plugin: %s"
+msgstr ""
+
+#: c2c-plugin.php:623
+msgid "Coffee fuels my coding."
+msgstr ""
+
+#: c2c-plugin.php:858
+msgid "A plugin by coffee2code"
+msgstr ""
+
+#: c2c-plugin.php:867
+msgid "Save Changes"
+msgstr ""
+
+#: c2c-plugin.php:868
+msgid "Reset Settings"
+msgstr ""
+
+#: c2c-plugin.php:874
+msgid "Scott Reilly, aka coffee2code"
+msgstr ""
+
+#: c2c-plugin.php:875
+msgid "This plugin brought to you by %s."
+msgstr ""
+
+#: c2c-plugin.php:876
+msgid "Please consider a donation"
+msgstr ""
+
+#: c2c-plugin.php:877
+msgid "Did you find this plugin useful?"
+msgstr ""
+
+#. #-#-#-#-#  reveal-template.pot (Reveal Template 3.0)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: reveal-template.php:139 reveal-template.php:140
+#: reveal-template.widget.php:37
+msgid "Reveal Template"
+msgstr ""
+
+#: reveal-template.php:144
+msgid "Reveal in footer?"
+msgstr ""
+
+#: reveal-template.php:145
+msgid ""
+"To be precise, this displays where <code>&lt;?php wp_footer(); ?></code> is "
+"called. If you uncheck this, you'll have to use the template tag to display "
+"the template."
+msgstr ""
+
+#: reveal-template.php:146
+msgid "<p>Rendered template: %template%</p>"
+msgstr ""
+
+#: reveal-template.php:147
+msgid "Output format"
+msgstr ""
+
+#: reveal-template.php:148
+msgid ""
+"Only used for the footer display. Use %template% to indicate where the "
+"template name should go."
+msgstr ""
+
+#: reveal-template.php:150
+msgid "Template path"
+msgstr ""
+
+#: reveal-template.php:152
+msgid ""
+"How much of the template path do you want reported? Applies directory to "
+"footer display, and is the default for the template tag usage (though can be "
+"overridden via an argument to <code>reveal_template()</code>)"
+msgstr ""
+
+#: reveal-template.php:183
+msgid "Reveal Template Settings"
+msgstr ""
+
+#: reveal-template.php:184
+msgid ""
+"Reveal the theme template used to render the displayed page. By default this "
+"appears in the site's footer and only for logged in users with the "
+"\"update_themes\" capability (such as an admin)."
+msgstr ""
+
+#: reveal-template.php:185
+msgid ""
+"Also note that the plugin provides a \"Reveal Template\" <a href=\"%s"
+"\">widget</a> that can be used to reveal the current templated."
+msgstr ""
+
+#: reveal-template.php:186
+msgid ""
+"Please refer to this plugin's <a href=\"%s\" title=\"readme\">readme.txt</a> "
+"file for documentation and examples."
+msgstr ""
+
+#: reveal-template.php:210
+msgid ""
+"Absolute path, e.g. /usr/local/www/yoursite/wp-content/themes/yourtheme/"
+"single.php"
+msgstr ""
+
+#: reveal-template.php:211
+msgid "Relative path, e.g. wp-content/themes/yourtheme/single.php"
+msgstr ""
+
+#: reveal-template.php:212
+msgid "Path relative to themes directory, e.g. yourtheme/single.php"
+msgstr ""
+
+#: reveal-template.php:213
+msgid "Filename, e.g. single.php"
+msgstr ""
+
+#: reveal-template.widget.php:38
+msgid ""
+"Reveal the name of the theme template used to render the displayed page."
+msgstr ""
+
+#: reveal-template.widget.php:41
+msgid "Revealed Template"
+msgstr ""
+
+#: reveal-template.widget.php:42
+msgid "Title"
+msgstr ""
+
+#: reveal-template.widget.php:44
+msgid "Template path type"
+msgstr ""
+
+#: reveal-template.widget.php:49
+msgid "Show widget to all visitors?"
+msgstr ""
+
+#: reveal-template.widget.php:50
+msgid ""
+"If checked, the widget will always be visible. By default (and when "
+"unchecked), the widget is only shown to users with the \"update_themes\" "
+"capability."
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://coffee2code.com/wp-plugins/reveal-template/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Reveal the theme template file used to render the displayed page, via the "
+"footer, widget, shortcode, and/or template tag."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Scott Reilly"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://coffee2code.com/"
+msgstr ""

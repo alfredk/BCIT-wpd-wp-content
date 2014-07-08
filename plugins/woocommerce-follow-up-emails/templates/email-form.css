@@ -1,0 +1,236 @@
+ul.email-types-list li div.email-description {
+    position: relative;
+    width: 96%;
+    padding: 1em 2%;
+    margin: 1em 0;
+    font-size: .98em;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    line-height: 1.5em;
+    background: #ebe8eb;
+    background: -webkit-gradient(linear,left top,left bottom,from(#ebe8eb),to(#e0dadf));
+    background: -webkit-linear-gradient(#ebe8eb,#e0dadf);
+    background: -moz-linear-gradient(center top,#ebe8eb 0,#e0dadf 100%);
+    background: -moz-gradient(center top,#ebe8eb 0,#e0dadf 100%);
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.25);
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.25);
+    color: #5e5e5e;
+    text-shadow: 0 1px 0 rgba(255,255,255,.8);
+}
+
+.field.fue-error label {
+    color: red;
+    font-weight: bold;
+}
+
+.help_tip {float: right;}
+/* TipTip CSS - Version 1.2 */
+#tiptip_holder {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
+#tiptip_holder.tip_top {
+    padding-bottom: 5px;
+}
+#tiptip_holder.tip_bottom {
+    padding-top: 5px;
+}
+#tiptip_holder.tip_right {
+    padding-left: 5px;
+}
+#tiptip_holder.tip_left {
+    padding-right: 5px;
+}
+#tiptip_content {
+    font-size: 11px;
+    color: #fff;
+    padding: 4px 8px;
+    background:#a2678c;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.10);
+    -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.10);
+    -moz-box-shadow: 1px 1px 3px rgba(0,0,0,0.10);
+    text-align: center;
+    code {
+        background: #855c76;
+        padding: 1px;
+    }
+}
+#tiptip_arrow, #tiptip_arrow_inner {
+    position: absolute;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 6px;
+    height: 0;
+    width: 0;
+}
+#tiptip_holder.tip_top #tiptip_arrow_inner {
+    margin-top: -7px;
+    margin-left: -6px;
+    border-top-color: #a2678c;
+}
+
+#tiptip_holder.tip_bottom #tiptip_arrow_inner {
+    margin-top: -5px;
+    margin-left: -6px;
+    border-bottom-color: #a2678c;
+}
+
+#tiptip_holder.tip_right #tiptip_arrow_inner {
+    margin-top: -6px;
+    margin-left: -5px;
+    border-right-color: #a2678c;
+}
+
+#tiptip_holder.tip_left #tiptip_arrow_inner {
+    margin-top: -6px;
+    margin-left: -7px;
+    border-left-color: #a2678c;
+}
+
+div.email-form h2.subtitle {
+    font-size: 18px;
+}
+
+div.email-form label {
+    display: block;
+    /*font-size: 15px;*/
+}
+
+div.email-form label.inline {
+    display: inline;
+    vertical-align: top;
+}
+
+div.email-form #progress {
+    border: 1px solid #dfdfdf;
+    width: 450px;
+    height: 20px;
+    padding: 1px;
+    float: none;
+}
+
+div.email-form #progress .complete {
+    background: #f1f1f1;
+    background-image: linear-gradient(to top,#d9d9d9,#c9c9c9);
+    height: 100%;
+}
+
+div.email-form div.field {
+    margin: 20px 0 30px 0;
+}
+
+#fue_form .fields-left {
+    float: left;
+    width: 80%;
+}
+
+#fue_form .field-container {
+    width: 100%;
+    overflow: auto;
+}
+
+
+#fue_form .field-container .post-box {
+    background-color: #fcfcfc;
+    border: 1px solid #dfdfdf;
+    padding: 10px;
+}
+
+ul#templates_list {
+    border: 1px solid #cecece;
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+    width: 882px;
+}
+
+ul#templates_list li {
+    float: left;
+    margin: 10px 0px 10px 5px;
+    padding: 0;
+    cursor: pointer;
+}
+
+ul#templates_list li.active img {
+    border: 3px solid #c9c9c9;
+
+}
+
+#template_editor_div, #custom_editor_div {
+    border: 2px dashed #CCC;
+    width: 760px;
+    min-height: 500px;
+    padding: 5px;
+}
+
+.nicEdit-pane {
+    position: fixed;
+    /*top: 65px;*/
+    /*left: 0px;*/
+}
+
+#editor_toolbar_container {
+    position: absolute;
+    width: 90px;
+    top: 370px;
+    right: 300px;
+}
+
+#custom_toolbar_container {
+    position: absolute;
+    width: 90px;
+    top: 146px;
+    right: 300px;
+}
+
+#editor_toolbar, #custom_editor_toolbar {
+    position: absolute;
+    top: 0;
+    /* just used to show how to include the margin in the effect */
+    margin-top: 20px;
+    padding-top: 19px;
+}
+
+#editor_toolbar.fixed, #custom_editor_toolbar.fixed {
+  position: fixed;
+  top: 0;
+}
+
+#editor_toolbar, #custom_editor_toolbar { width: 90px; }
+
+.nicEdit-panelContain div {
+    margin: 2px 2px 2px 1.5px !important;
+}
+
+.fields-right {
+    position: absolute;
+    width: 17%;
+    top: 155px;
+    right: 30px;
+}
+
+#vars_box {
+    position: absolute;
+    top: 0;
+    /* just used to show how to include the margin in the effect */
+    margin-top: 30px;
+    padding-top: 19px;
+}
+
+#vars_box.fixed {
+  position: fixed;
+  top: 10px;
+}
+
+#vars_box { width: 200px; }
+
+.nicEdit-selectTxt {
+    /*float: none !important;*/
+    /*width: auto !important;*/
+}

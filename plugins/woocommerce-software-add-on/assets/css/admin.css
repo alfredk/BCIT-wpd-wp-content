@@ -1,0 +1,36 @@
+#woocommerce-product-data ul.product_data_tabs li.software_tab a {
+	padding: 9px 9px 9px 31px;
+	line-height: 16px;
+	border-bottom: 1px solid #d5d5d5;
+	text-shadow: 0 1px 1px #fff;
+	color: #555;
+	background-image: url(../images/software.svg)!important;
+	background-repeat: no-repeat !important;
+	background-size:13px 13px !important;
+	background-position: 11px 11px !important;
+}
+
+#woocommerce-product-data ul.product_data_tabs li.software_tab.active a {
+	background-color: #f8f8f8;
+	border-bottom: 1px solid #f8f8f8;
+}
+
+#woocommerce-order-licence-keys .inside, 
+#wc_software-activation-data .inside {
+	margin: 0;
+	padding: 0;
+}
+
+#woocommerce-order-licence-keys .buttons {
+	float: left;
+	padding: 0;
+	margin: 0;
+	vertical-align: top;
+}
+
+#activations-table td {
+	padding: 8px;
+	text-align: left;
+	line-height: 26px;
+	vertical-align: top;
+}

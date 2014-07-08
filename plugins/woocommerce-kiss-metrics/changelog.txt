@@ -1,0 +1,40 @@
+*** WooCommerce KISSmetrics Changelog ***
+
+2014.01.20 - version 1.3
+ * Misc - WooCommerce 2.1 compatibility
+ * Misc - Uses SkyVerge Plugin Framework
+ * Localization - Text domain changed from `wc-kissmetrics` to `woocommerce-kiss-metrics`
+
+2013.12.13 - version 1.2.2
+ * Tweak - New filters for easily changing the properties set along with the "completed purchase" and "activated subscription" events
+ * Tweak - Improved compatibility with plugins extending the integration
+
+2013.09.06 - version 1.2.1
+ * Tweak - Identify guest users by their email address after completing purchase
+ * Tweak - Prevent duplicate "completed purchase" events if the customer refreshes the order received page
+
+2013.07.26 - version 1.2
+ * Tweak - Rewritten codebase for improved performance and reliability
+ * Localization - Text domain changed from `wc_kissmetrics` to `wc-kissmetrics`
+ * Misc - Rebrand to SkyVerge
+
+2013.01.23 - version 1.1.1
+ * Feature - Support for WooCommerce 2.0
+ * Tweak - Minor performance improvements
+
+2012.12.07 - version 1.1.0
+ * Feature - Add support for WooCommerce Subscriptions! Track subscription-related events with one click, see the Docs for additional info.
+ * Feature - Set properties on visitor after checkout: date user created, email of user, first name, last name, and username (if available)
+ * Feature - Log errors and queries to the WooCommerce log instead of the PHP error log for easier access when on shared or cloud hosting
+ * Tweak - Use new hooks introduced in WC 1.6.4 for improved reliability and performance with AJAX Add to Cart and Applied Coupon events
+ * Tweak - Improve code styling and documentation
+ * Fix - Blank property names will now prevent them from being tracked
+
+2012.12.04 - version 1.0.2
+ * Feature - New WooThemes Updater
+
+2012.08.22 - version 1.0.1
+ * Add missing file
+
+2012.07.10 - version 1.0
+ * Initial Release :)

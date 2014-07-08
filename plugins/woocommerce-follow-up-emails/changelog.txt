@@ -1,0 +1,377 @@
+*** WooCommerce Follow-Up Emails ***
+
+2014.06.09 - version 3.3.4
+ * Bug fix: Initial order status sometimes would not trigger order_status_updated callback
+
+2014.06.05 - version 3.3.3
+ * Bug fix: Fixed warnings on the checkout view
+ * Bug fix: Fixed delete link on manual emails
+ * Bug fix: Inherited some basic html email styling to make custom html emails prettier
+
+2014.05.19 - version 3.3.2
+ * Bug fix: Fixed error being seem in some cases on the order page
+ 
+2014.05.14 - version 3.3.1
+ * Bug fix: Incorrect product selector showing for bookings emails
+ * Bug fix: Correctly remove queued cancelled subscription emails
+ * Enhancement: Added manual bookings email support
+
+2014.05.13 - version 3.3
+ * Feature: Added support for Bookings plugin by WooThemes
+ * Enhancement: Added custom subscription variable to show subscription end date for cancelled subscriptions
+ * Enhancement: Added ability to create subscription emails by product/subscription
+ * Enhancement: Added a Follow-up Email manager role for users that need to only manage email campaigns
+ * Bug fix: Fixed error when no products are selected
+ * Bug fix: Updated to $_order variable
+ * Bug fix: Fixed manual email for customer bought between dates trigger
+
+
+2014.05.06 - version 3.2.2
+ * Bug fix: WooCommerce Tickets Events email form field
+ * Bug fix: Followup Emails importer
+ * Bug fix: Reports not showing for emails with a disposable (+) character
+ * Bug fix: Report for queued emails showing other users' emails
+ * Bug fix: Removed triggers that sometimes (0.01%) caused duplicate first purchase emails
+ * Enhancement: Update new scheduler (still experimental, but recommended)
+ * Bug fix: Protection against adding emails to the queue if the order was already processed
+ * Enhancement: Various UI improvements
+ * Feature: Added new "After customer purchased more than one time" trigger
+ * Fix missing {item_title} variable on subscriptions emails
+
+2014.05.01 - version 3.2.1
+ * Improvement: Additional reporting tweaks to ensure consistency and quality
+ * Bug fix: Reporting should be in line with site time definition using current_time
+ * Improvement: Improvements in error tracking - to help customers
+
+2014.04.28 - version 3.2
+ * Experimental: Implemented Action Scheduler. Experimental. Back up your data before turning on.
+ * Feature: Each email sent will be noted in customer order details
+ * Enhancement: Restructured settings page to support additional settings coming in future versions
+ * Enhancement: Improved stability and accuracy of reporting
+ * Enhancement: Link user profile directly to user email reporting history
+ * Enhancement: Added a new report to user reporting tables that shows scheduled emails upcoming
+ * Various code level improvements for better stability, and pave way for new features
+ * Enhancement: Added {order_billing_address} and {order_shipping_address} to generic, normal and subscription emails
+
+2014.04.17 - version 3.1.2
+ * Bug fix: {customer_first_name} should use billing_first_name
+ * Bug fix: Changed check to see if WooCommerce Tickets or Events Calendar is installed
+ * Bug fix: Check to ensure inactive emails are not sent
+
+2014.04.10 - version 3.1.1
+ * Bug fix: Points and rewards variables not being included
+ * Bug fix: Better support for custom fields
+ * Bug fix: Support for {customer_first_name} that includes a space
+
+2014.03.15 - version 3.1
+ * Feature: Added setting for an admin set email address to be notified of failed subscription payments
+ * Bug fix: Coupons variable missing
+ * Bug fix: Adding variations caused issue with duplicate product ID
+
+2014.03.12 - version 3.0.10
+ * Bug fix: Coupons fixes
+ * Bug fix: Only send once option now saves correctly to yes if checked
+ * Bug fix: Bug fix: cart abandoned email and performance
+ 
+2014.03.06 - version 3.0.9.1
+ * Bug fix: Disregard case for coupons
+
+2014.02.26 - version 3.0.9
+ * Cleanup: Improved link tracking in emails and reporting
+ * Enhancement: Storewide emails can now exclude purchases in specific categories
+ * Bug fix: Fixed some minor issues with JavaScript and variable switching in emails
+ * Bug fix: Fixed issues related to {item_names} variable
+ * Bug fix: Fixed edit link in coupons view
+ * Enhancement: New icon based upon WordPress 3.8 dashicons
+ * Bug fix: Subscription emails are now being saved appropriately
+ * Bug fix: Fixed emails not getting sent after subscription expires
+ * Bug fix: Fixed inability to delete emails in some cases
+ * Bug fix: Various improvements and cleanup throughout numerous files 
+ * Bug fix: Admin roles issue
+ * Enhancement: Ability to use real products and order data to test email content
+
+2014.02.19 - version 3.0.8
+ * Bug fix: Added better protection against generic emails being sent when a specific order is created
+ * Enhancement: Sensei triggers for quiz completion, quiz start, pass, fail, etc.
+ * Bug fix: Changed subscription hook to correct subscription_reactivated
+ * Enhancement: Ability to pause (inactivate) an email campaign (instead of deleting)
+ * Cleanup: Added some documentation in plugin
+ * Bug fix: Fixed {order_item} variable for subscriptions
+
+2014.02.04 - version 3.0.7
+ * Bug fix: Opt-out shortcode fix
+
+2014.02.03 - version 3.0.6
+ * Bug fix: Shortcode fix for {customer_first_name} with subscriptions
+ * Enhancement: Added ability to clone an email for easy duplication
+
+2014.02.02 - version 3.0.5
+ * Bug fix: Not showing coupons on editing of email
+ * Bug fix: Better unsubscribe shortcode support
+
+2014.01.30 - version 3.0.4
+ * Bug fix: Corrected an incorrectly sent second, blank email
+ * Bug fix: Fixed issue where previously saved coupons weren't staying selected when editing emails
+ * Cleanup: When editing email, users will go to step one instead of step three
+
+2014.01.28 - version 3.0.3
+ * Bug fix: Permissions error for certain WordPress users unable to access Follow-up Emails (coupons, etc)
+ * Enhancement: Setting to define which users have ability to access Follow-up Emails in admin
+ * Cleanup: Change button language to make it more obvious that email editor now has three steps
+ * Bug fix: Fixed issue related to saving Follow-up Emails settings
+
+2014.01.26 - version 3.0.2
+ * Multiple minor bug fixes
+
+2014.01.23 - version 3.0.1
+ * Add woothemes_queue_update
+
+2014.01.21 - version 3.0.0
+ * Improvement: Moved Follow Up Emails to its own menu structure
+ * Enhancement: Ability to BCC any email address on any email
+ * Enhancement: Sensei support - added six triggers for Sensei based emails
+ * Enhancement: New email creation process
+ * Enhancement: Ability to add/delete/manage unsubscribe list
+ * Enhancement: Ability to import export emails and settings
+ * Cleanup: Better variation support
+ * Bug fix: Manual emails, at times, not sending to full list of actual customers
+ * Enhancement: Added WooCommerce 2.1 support with backwards compatibility
+ * Enhancement: New subscription trigger - "before active subscription expires"
+ * Enhancement: New manual email - "all active subscribers for..."
+ * Enhancement: Better duplicate email management logic and added overrides
+ * Enhancement: Added "My Email Subscriptions" to the user account
+ * Enhancement: Added ability to reset reports data
+ * Bug fixes: A slew of them (as with all software, we concede there might be more)
+ 
+2014.01.16 - version 2.5.17
+ * Bug fix: Removed a few lines of code only needed for testing
+
+2013.12.09 - version 2.5.16
+ * Added check for created tables. Will create if tables are not already created.
+
+2013.11.20 - version 2.5.15
+ * Bug fix: Fix support for SSL to ensure all content can be loaded securely
+
+2013.11.13 - version 2.5.14
+ * Enhancement: Send emails at intervals based upon ordered quantities
+ * Enhancement: Better support for cancelled or on-hold subscriptions
+ * Bug fix: Re-enable managing the daily email summary to admin
+
+2013.09.30 - version 2.5.13
+ * Enhancement: Added {order_date} variable that will display the order date only
+ * Bug fix: Improved the way order numbers are output in URLs in emails
+ * Bug fix: Better "full name" searching in manual emails
+ 
+2013.09.24 - version 2.5.12
+ * Enhancement: Added check to protect against erroneous emails - wasn't happening, but better safe than sorry
+ * Enhancement: Manual emails sending improvements
+
+2013.09.19 - version 2.5.11
+ * Feature: Track any link using the {link url=http://...} variable
+ * Bug fix: Incorrect storing of unsubscribed email addresses - sorry :(
+
+2013.09.10 - version 2.5.10
+ * Feature: In reporting, honor WordPress date settings for the install
+ * Enhancement: Force checking to push CRON function on regular basis
+ * Notification: User notification if CRON is not set, and display schedule
+ * Enhancement: Built in weekly optimization of FuE tables to improve performance
+ * Bug Fix: Found a missing DIV
+ 
+2013.09.05 - version 2.5.9
+ * Bug fixes: Manual email issues related to subject and body content
+
+2013.08.29 - version 2.5.8
+ * Enhancement: Reporting optimizations
+ * Enhancement: Creation of a new renewal trigger for subscriptions
+ * Improvement: Variable support for WooCommerce Ticket event emails
+ * Cleanup: Various code cleanup and optimizations
+
+2013.08.28 - version 2.5.7
+ * Cleanup: Manual email send process
+ * Feature: Added new variable {store_url=/categories} to point to relative pages
+ * Cleanup: Reporting is now more reliable
+
+2013.08.26 - version 2.5.6
+ * Bug fix: Manual emails were not being delivered
+
+2013.08.15 - version 2.5.5
+ * Bug fix: Manual emails can now send
+ * Changed name of WooTickets to WooCommerce Tickets
+ * Bug fix: Issue with saving/editing emails
+
+2013.08.13 - version 2.5.4
+ * Feature: Send email campaigns for specific variations of products
+
+2013.08.01 - version 2.5.3
+ * Bug fix: Issue with editing a manual email
+
+2013.07.31 - version 2.5.2
+ * Bug fix: Issue with sending subscription emails
+
+2013.07.29 - version 2.5.1
+ * Bug fix: Fixed the ability to test emails
+ * Cleanup: Other random bug fixes
+
+2013.07.23 - version 2.5
+ * Feature: Customer specific emails - now email customers based upon their lifetime value (orders, amounts, last purchase)
+ * Integration: Support for sending WooTickets emails
+ * Integration: Cleanup of Subscriptions support and new trigger for "before subscription renewal"
+ * Feature: New replacement variables as well as email type specific triggers
+ * Enhancement: Option to reset the queue date for emails that would be duplicate emails
+ * Bug fixes: Quite a few in addition to general new awesomeness
+
+2013.07.01 - version 2.4.4
+ * Enhancement: Added support for upcoming RMA warranty plugin
+ * Enhancement: Added support for WooCommerce Points and Rewards
+ * Bug fix: Randomly not saving emails - fixed
+ * Bug fix: Better support for Subscription variations
+ * Bug fix: Cleanup support for new user and first purchase emails
+
+2013.06.04 - version 2.4.3
+ * Cleanup: Errors suppression on install
+ * Cleanup: User reporting duplications removed
+
+2013.05.15 - version 2.4.2
+ * Bug fix: Triggers slightly out of whack. Whacked back into place. Fixes any emails not sent issues
+ * Enhancement: New shortcode - Now add post excerpts into the body of your emails
+
+2013.05.03 - version 2.4.1
+ * Cleanup: Random code cleanup
+ * Bug fix: Added back email anyone - customer or not - with manual sending 
+
+2013.04.24 - version 2.4
+ * Enhancement: Add ability to select all customers, or buyers of certain products/categories, in addition to existing "send to email address" functionality
+ * Feature: Allow the ability to remove wrapping of emails with WooCommerce styles. Allows for complete customization of email templates with your own styles.
+ * Feature: Added faster processing of emails for stores with lots of customers and lots of orders by adding an advanced lookup table. This will allow more advanced triggers for creating marketing emails. Keep an eye out!
+
+2013.04.05 - version 2.3.6
+ * Bug fix: Use WP install's date time for orders
+ * Improvement: Only load admin scripts within plugin settings pages
+
+2013.03.29 - version 2.3.5
+ * Removed "Purchase Date" status as "Order Status: Processing" is more reliable and a better choice. Should update existing emails automagically.
+
+2013.03.26 - version 2.3.4
+ * Bug fix: Added translation to unsubscribe elements
+ * Bug fix: Fix inability to send to custom email addresses with Manual send
+
+2013.03.13 - version 2.3.3
+ * Bug fix: How did we lose the "Update Priorities" button? Who knows, but we found it
+
+2013.03.12 - version 2.3.2
+ * Enhancement: Better handling of "Add to Cart" trigger, and knowing when an item was purchased.
+ * Enhancement: Added some detail to report names
+
+2013.03.04 - version 2.3.1
+ * Added option to add coupons to manual email sends (not sure why we left that out originally)
+ * Made "Send again in" an option. Send an immediate email to a customer or non-customer, and automatically define the follow-up interval when the email will resend, or not.
+
+2013.03.03 - version 2.3
+ * Feature: New manual email type - create templates that you can send immediately when you need it
+ * Feature: New variable {customer_email}
+ * Feature: Initial (beta) support for Sequential Order Numbers (http://wordpress.org/extend/plugins/woocommerce-sequential-order-numbers/) and Pro version
+ * Feature: Custom status support now official
+ * Bug fix: {store_url} variable now uses home_url();
+ * Other minor fixes/improvements
+
+2013.02.22 - version 2.2.3
+ * Added ability to define time of send for specific date
+ * Minor reports cleanup, not bug related
+ * Moved "opt-out" out of My Account, and added shortcode [woocommerce_followup_optout] to show opt-out checkbox
+
+2013.02.12 - version 2.2.2
+ * Fixed parameter counts to better capture statuses
+ * Improved (beta) support for custom statuses
+
+2013.02.04 - version 2.2.1
+ * Fixed bug to save custom coupon variables
+ * Initial (beta) support for custom statuses (http://wordpress.org/extend/plugins/woocommerce-custom-statuses/)
+
+2013.01.26 - version 2.2
+ * 2.0 compatibility
+ * various bug fixes
+ * wysiwyg fixes to hopefully avoid plugin conflicts
+ * random happiness
+
+2013.01.16 - version 2.1.9
+ * Fix for on-hold orders set to processing
+
+2012.12.19 - version 2.1.8
+ * Fixed TinyMCE errors
+ 
+2012.12.17 - version 2.1.7
+ * Fixed Google Analytics not appending
+ * Fixed latter series emails not sending
+
+2012.12.04 - version 2.1.6
+ * New updater
+
+2012.10.18 - version 2.1.5
+ * Bug fix
+
+2012.10.16 - version 2.1.4
+ * Fixed bug when no categories are assigned to products, and no specific product emails are defined
+ * Minor tweaks
+
+2012.10.15 - version 2.1.3
+ * Addition of support for all standard WooCommerce status changes
+
+2012.10.12 - version 2.1.2
+ * Minor bug fixes
+
+2012.10.03 - version 2.1.1
+ * Minor bug fixes
+
+2012.10.02 - version 2.1
+ * Fixed inability to select coupon, and updated coupon interface
+ * Added user detail report - see every email each customer receives by customer
+ * Added support for reminder emails with dynamic text/variables
+ * Added new email type - on user sign-up
+ * Added ability to define email addresses to receive daily send activity emails
+
+2012.09.01 - version 2.0
+ * Better sorting of email types
+ * Added all product (storewide) emails
+ * Added email type that always sends to customers
+ * Added custom email sorting and prioritization
+ * Added support for sending emails for abandoned carts for logged-in users
+ * Added logic to identify potentially duplicate emails from being created
+ * Added minute, week, month, year, and specific date intervals for sending emails
+ * Added support for WC Subscriptions on activation, deactivation, and expiration
+ * Added ability to recognize and send emails on first purchase by customer
+ * Added coupon feature to automate coupon creation and insertion into emails
+ * Added reporting features tracks sends, opens, clicks, and coupon usage
+ * Added order date variable
+ * Added order number variable
+ * Added support to include custom fields as variables
+ * Bug fixes
+ * Display updates
+
+2012.07.25 - version 1.1.6
+ * Fixed non-send errors
+ * Fixed admin styling
+
+2012.07.24 - version 1.1.5
+ * Fixed bug in email sending queue when no categories are set
+
+2012.07.23 - version 1.1.4
+ * Change script loader for WooCommerce 1.6+ support
+
+2012.07.03 - version 1.1.3
+ * Bug fixes
+
+2012.06.20 - version 1.1.2
+ * Bug fixes for order statuses
+ * Updated to check for new orders hourly instead of daily
+
+2012.06.18 - version 1.1.1
+ * Bug fixes on install
+
+2012.06.16 - version 1.1
+ * Added support for setting emails to send at hour intervals
+ * Added customer first name variable
+ * Added ability to set emails for a category
+ * Added ability to define sending of email XX days after purchase or after order completion
+
+2012.05.24 - version 1.0
+ * First release

@@ -1,0 +1,199 @@
+/*
+Theme Name: Alfred K Pop Up SHop Yo!!
+Description: WooCommerce store WPD -
+Author: Alfie
+Version: 1.0
+Template: simone
+*/
+@import url('../simone/style.css');
+
+@media screen and (min-width: 1160px) {
+  #container{
+    float: left;
+    width: 100%;
+    margin-left: -380px;
+    padding-left: 380px;
+  }
+  #content{
+    width: 100%;
+    padding: .25rem 3rem;
+  }
+}
+
+/* Star rating */
+.star-rating {
+  float: right;
+  overflow: hidden;
+  position: relative;
+  height: 1em;
+  line-height: 1em;
+  font-size: 1em;
+  width: 5.4em;
+  font-family: 'FontAwesome' !important;
+}
+.star-rating:before {
+  content: "\f087\f087\f087\f087\f087" !important;
+  color: transparent !important;
+  float: left;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.star-rating span {
+  overflow: hidden;
+  float: left;
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding-top: 1.5em;
+}
+.star-rating span:before {
+  content: "\f087\f087\f087\f087\f087" !important;
+  top: 0;
+  position: absolute;
+  left: -1px !important;
+  color: blueviolet;
+  font-size: 17px !important;
+}
+.woocommerce-product-rating {
+  line-height: 2em;
+  display: block;
+}
+.woocommerce-product-rating .star-rating {
+  margin: .5em 4px 0 0;
+  float: left;
+}
+.products .star-rating {
+  display: block;
+  margin: 0 0 .5em;
+  float: none;
+}
+.hreview-aggregate .star-rating {
+  margin: 10px 0 0 0;
+}
+#review_form #respond {
+  position: static;
+  margin: 0;
+  width: auto;
+  padding: 0 0 0;
+  background: transparent none;
+  border: 0;
+}
+#review_form #respond p {
+  margin: 0 0 10px;
+}
+#review_form #respond .form-submit input {
+  left: auto;
+}
+#review_form #respond textarea {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+
+  width: 100%;
+}
+p.stars {
+  position: relative;
+  font-size: 1em;
+}
+p.stars a {
+  display: inline-block;
+  font-weight: 700;
+  margin-right: 1em;
+  text-indent: -9999px;
+  position: relative;
+}
+p.stars a:last-child {
+  border-right: 0;
+}
+p.stars a.star-1,
+p.stars a.star-2,
+p.stars a.star-3,
+p.stars a.star-4,
+p.stars a.star-5 {
+  border-right: 1px solid #ccc;
+}
+p.stars a.star-1:after,
+p.stars a.star-2:after,
+p.stars a.star-3:after,
+p.stars a.star-4:after,
+p.stars a.star-5:after {
+  font-family: "FontAwesome" !important;
+  text-indent: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+p.stars a.star-1 {
+  width: 2em;
+}
+p.stars a.star-1:after {
+  content: "\f087" !important;
+}
+p.stars a.star-1:hover:after,
+p.stars a.star-1.active:after {
+  content: "\f087" !important;
+  color: blueviolet;
+}
+p.stars a.star-2 {
+  width: 3em;
+}
+p.stars a.star-2:after {
+  content: "\f087\f087" !important;
+}
+p.stars a.star-2:hover:after,
+p.stars a.star-2.active:after {
+  content: "\f087\f087" !important;
+  color: blueviolet;
+}
+p.stars a.star-3 {
+  width: 4em;
+}
+p.stars a.star-3:after {
+  content: "\f087\f087\f087" !important;
+}
+p.stars a.star-3:hover:after,
+p.stars a.star-3.active:after {
+  content: "\f087\f087\f087" !important;
+  color: blueviolet;
+}
+p.stars a.star-4 {
+  width: 5em;
+}
+p.stars a.star-4:after {
+  content: "\f087\f087\f087\f087" !important;
+}
+p.stars a.star-4:hover:after,
+p.stars a.star-4.active:after {
+  content: "\f087\f087\f087\f087" !important;
+  color: blueviolet;
+}
+p.stars a.star-5 {
+  width: 6em;
+  border: 0;
+}
+p.stars a.star-5:after {
+  content: "\f087\f087\f087\f087\f087" !important;
+}
+p.stars a.star-5:hover:after,
+p.stars a.star-5.active:after {
+  content: "\f087\f087\f087\f087\f087" !important;
+  color: blueviolet;
+}
+
+
+button.single_add_to_cart_button.button.alt,
+a.button.add_to_cart_button.product_type_simple,
+a.button.add_to_cart_button.product_type_variable,
+input.checkout-button.button.alt.wc-forward,
+input#place_order{
+  background: black !important;
+  border: 1px solid black;
+  border-radius: 0px;
+  color: #fff;
+}
